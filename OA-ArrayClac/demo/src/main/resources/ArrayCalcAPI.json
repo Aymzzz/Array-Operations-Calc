@@ -1,0 +1,226 @@
+{
+    "openapi": "3.0.1",
+    "info": {
+      "title": "OpenAPI definition",
+      "version": "v0"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:8080",
+        "description": "Generated server url"
+      }
+    ],
+    "paths": {
+      "/arrayops/sortArray": {
+        "get": {
+          "tags": [
+            "array-ops"
+          ],
+          "operationId": "sortArray",
+          "parameters": [
+            {
+              "name": "arrayIn",
+              "in": "query",
+              "required": true,
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "*/*": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/arrayops/multiplyArrays": {
+        "get": {
+          "tags": [
+            "array-ops"
+          ],
+          "operationId": "multiplyArrays",
+          "parameters": [
+            {
+              "name": "arrayIn1",
+              "in": "query",
+              "required": true,
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            {
+              "name": "arrayIn2",
+              "in": "query",
+              "required": true,
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "*/*": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/arrayops/findMin": {
+        "get": {
+          "tags": [
+            "array-ops"
+          ],
+          "operationId": "minArray",
+          "parameters": [
+            {
+              "name": "arrayIn",
+              "in": "query",
+              "required": true,
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "*/*": {
+                  "schema": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/arrayops/findMax": {
+        "get": {
+          "tags": [
+            "array-ops"
+          ],
+          "operationId": "maxArray",
+          "parameters": [
+            {
+              "name": "arrayIn",
+              "in": "query",
+              "required": true,
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "*/*": {
+                  "schema": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "/arrayops/addArrays": {
+        "get": {
+          "tags": [
+            "array-ops"
+          ],
+          "operationId": "sumArrays",
+          "parameters": [
+            {
+              "name": "arrayIn1",
+              "in": "query",
+              "required": true,
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            },
+            {
+              "name": "arrayIn2",
+              "in": "query",
+              "required": true,
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "format": "int32"
+                }
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "content": {
+                "*/*": {
+                  "schema": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "format": "int32"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "components": {
+  
+    }
+  }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://arraycalc.xs/" xmlns:tns="http://arraycalc.xs/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="maxArray" type="tns:maxArray"/>
+
+  <xs:element name="maxArrayResponse" type="tns:maxArrayResponse"/>
+
+  <xs:element name="minArray" type="tns:minArray"/>
+
+  <xs:element name="minArrayResponse" type="tns:minArrayResponse"/>
+
+  <xs:element name="multiplyArrays" type="tns:multiplyArrays"/>
+
+  <xs:element name="multiplyArraysResponse" type="tns:multiplyArraysResponse"/>
+
+  <xs:element name="sortArray" type="tns:sortArray"/>
+
+  <xs:element name="sortArrayResponse" type="tns:sortArrayResponse"/>
+
+  <xs:element name="sumArrays" type="tns:sumArrays"/>
+
+  <xs:element name="sumArraysResponse" type="tns:sumArraysResponse"/>
+
+  <xs:complexType name="sumArrays">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="arg1" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sumArraysResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="multiplyArrays">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="arg1" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="multiplyArraysResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="minArray">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="minArrayResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sortArray">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="sortArrayResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="maxArray">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="maxArrayResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
